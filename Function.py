@@ -78,14 +78,14 @@ def check_update():
     global version
     effect(message15)
 
-    updat=requests.get('')
+    updat=requests.get('https://raw.githubusercontent.com/EZICTHRONE/BOMBER/main/version.data')
     updat_vers = float(updat.text[0:6])
     
     if updat_vers > float(version):
         print("\n        [\033[32m!\033[33m] Найдено обновление\n" + updat.text[0:6] + "\n        [\033[32m+\033[33m] Изменения:\n" + updat.text[7:])
         print("\n        [\033[32m!\033[33m] Начато обновление, пожалуйста подождите!")
         
-        up_boom = requests.get('https://raw.githubusercontent.com/Ivan-Zaitsev/SMSBomber300/master/SMSBomber300.py')
+        up_boom = requests.get('https://raw.githubusercontent.com/Ivan-Zaitsev/SMSBomber300/master/Bomber.py')
         f = open("SMSBomber300.py", "wb")
         f.write(up_boom.content)
         f.close()
