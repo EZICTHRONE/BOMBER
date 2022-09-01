@@ -21,7 +21,7 @@
 
  pkg install python git
 
- git clone 
+ git clone https://github.com/EZICTHRONE/BOMBER
  
 
  ls
