@@ -85,14 +85,14 @@ def check_update():
         print("\n        [\033[32m!\033[33m] Найдено обновление\n" + updat.text[0:6] + "\n        [\033[32m+\033[33m] Изменения:\n" + updat.text[7:])
         print("\n        [\033[32m!\033[33m] Начато обновление, пожалуйста подождите!")
         
-        up_boom = requests.get('https://raw.githubusercontent.com/Ivan-Zaitsev/SMSBomber300/master/Bomber.py')
+        up_boom = requests.get('https://raw.githubusercontent.com/EZICTHRONE/BOMBER/main/Bomber.py')
         f = open("SMSBomber300.py", "wb")
         f.write(up_boom.content)
         f.close()
         print('\n        [\033[32m+\033[33m] Файл SMSBomber300.py обновлен!')
         time.sleep(1)
 
-        up_function = requests.get('https://raw.githubusercontent.com/Ivan-Zaitsev/SMSBomber300/master/Function.py')
+        up_function = requests.get('https://raw.githubusercontent.com/EZICTHRONE/BOMBER/main/Function.py')
         f2 = open("Function.py", "wb")
         f2.write(up_function.content)
         f2.close()
@@ -100,7 +100,7 @@ def check_update():
         time.sleep(1)
 
 
-        up_banners = requests.get('https://raw.githubusercontent.com/Ivan-Zaitsev/SMSBomber300/master/Banners.py')
+        up_banners = requests.get('https://raw.githubusercontent.com/EZICTHRONE/BOMBER/main/Banners.py')
         f3 = open("Banners.py", "wb")
         f3.write(up_banners.content)
         f3.close()
@@ -108,7 +108,7 @@ def check_update():
         time.sleep(1)
 
 
-        up_message = requests.get('https://raw.githubusercontent.com/Ivan-Zaitsev/SMSBomber300/master/Message.py')
+        up_message = requests.get('https://raw.githubusercontent.com/EZICTHRONE/BOMBER/main/Message.py')
         f4 = open("Message.py", "wb")
         f4.write(up_message.content)
         f4.close()
@@ -116,7 +116,7 @@ def check_update():
         time.sleep(1)
 
 
-        up_servissms = requests.get('https://raw.githubusercontent.com/Ivan-Zaitsev/SMSBomber300/master/ServesSMS.py')
+        up_servissms = requests.get('https://raw.githubusercontent.com/EZICTHRONE/BOMBER/main/ServesSMS.py')
         f5 = open("ServesSMS.py", "wb")
         f5.write(up_servissms.content)
         f5.close()
@@ -124,7 +124,7 @@ def check_update():
         time.sleep(1)
 
 
-        up_serviscall = requests.get('https://raw.githubusercontent.com/Ivan-Zaitsev/SMSBomber300/master/Servis-Call.py')
+        up_serviscall = requests.get('https://raw.githubusercontent.com/EZICTHRONE/BOMBER/main/Servis-Call.py')
         f6 = open("Servis-Call.py", "wb")
         f6.write(up_serviscall.content)
         f6.close()
