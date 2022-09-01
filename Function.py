@@ -86,7 +86,7 @@ def check_update():
         print("\n        [\033[32m!\033[33m] Начато обновление, пожалуйста подождите!")
         
         up_boom = requests.get('https://raw.githubusercontent.com/EZICTHRONE/BOMBER/main/Bomber.py')
-        f = open("SMSBomber300.py", "wb")
+        f = open("Bomber.py", "wb")
         f.write(up_boom.content)
         f.close()
         print('\n        [\033[32m+\033[33m] Файл SMSBomber300.py обновлен!')
