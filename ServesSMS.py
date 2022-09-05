@@ -26,7 +26,7 @@ def _sms(phone):
 
     while True:
         try:
-            a = requests.post("https://u.icq.net/api/v32/rapi/auth/sendCode",
+            a = requests.post("https://u.icq.net/api/v86/rapi/auth/sendCode",
                           json={"reqId": "91101-1606335718",
                                 "params": {"phone": phone, "language": "ru-RU", "route": "sms",
                                            "devId": "ic1rtwz1s1Hj1O0r", "application": "icq"}}, headers=headers1, timeout=5.05)
